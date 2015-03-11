@@ -1,3 +1,5 @@
+SET FOREIGN_KEY_CHECKS=0;
+
 -- acc_accounting_rule
 CREATE TABLE IF NOT EXISTS `acc_accounting_rule` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -514,7 +516,7 @@ CREATE TABLE IF NOT EXISTS `m_appuser` (
 -- m_appuser: ~1 rows (approximately)
 /*!40000 ALTER TABLE `m_appuser` DISABLE KEYS */;
 INSERT INTO `m_appuser` (`id`, `is_deleted`, `office_id`, `staff_id`, `username`, `firstname`, `lastname`, `password`, `email`, `firsttime_login_remaining`, `nonexpired`, `nonlocked`, `nonexpired_credentials`, `enabled`, `last_time_password_updated`) VALUES
-	(1, 0, 1, NULL, 'mifos', 'App', 'Administrator', '5787039480429368bf94732aacc771cd0a3ea02bcf504ffe1185ab94213bc63a', 'demomfi@mifos.org', b'00000000', b'10000000', b'10000000', b'10000000', b'10000000', '2014-05-06');
+	(1, 0, 1, NULL, 'mifos', 'App', 'Administrator', '', 'demomfi@mifos.org', 0 , 0 , 0 , 0 , 0, '2014-05-06');
 /*!40000 ALTER TABLE `m_appuser` ENABLE KEYS */;
 
 
@@ -3818,3 +3820,6 @@ CREATE TABLE IF NOT EXISTS `x_table_column_code_mappings` (
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+SET FOREIGN_KEY_CHECKS=1;
+

@@ -453,7 +453,7 @@
       <yloc>31</yloc>
       </entry>
     <entry>
-      <name>loan accounts</name>
+      <name>individual loan accounts</name>
       <description/>
       <type>JOB</type>
       <specification_method>filename</specification_method>
@@ -913,7 +913,7 @@
     </hop>
     <hop>
       <from>Meetings</from>
-      <to>loan accounts</to>
+      <to>individual loan accounts</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -966,7 +966,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>loan accounts</from>
+      <from>individual loan accounts</from>
       <to>Saving Accounts</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -1024,7 +1024,7 @@
       <to>Client Fees</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
